@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <title>Peeyashwebs — Home</title>
+    <meta
+      name="description"
+      content="Peeyashwebs — Professional web design, branding and digital growth solutions."
+    />
+
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+    <!-- Bootstrap + FontAwesome + AOS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Site CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+    <style>
+      :root {
+        --brand-blue: #0b63d4;
+        --brand-green: #2bb673;
+        --brand-orange: #ff7a2d;
+        --muted: #6c757d;
+      }
+
+      body {
+        font-family: Rubik, system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial;
+        color: #222;
+        overflow-x: hidden;
+      }
+
+      /* ==================== BASE ELEMENTS ==================== */
+      .top-bar {
+        background: #f8f9fb;
+        font-size: 0.95rem;
+        padding: 0.45rem 0;
+      }
+      .top-bar a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      .navbar-brand img {
+        max-height: 64px;
+        height: auto;
+      }
+
+      .bg-primary-custom {
+        background: linear-gradient(90deg, var(--brand-blue), #1b6fb8);
+      }
+
+      .text-accent {
+        color: var(--brand-orange);
+      }
+
+      .card-service img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .service-date {
+        position: absolute;
+        left: 12px;
+        top: 12px;
+        background: rgba(11, 99, 212, 0.95);
+        color: #fff;
+        padding: 6px 10px;
+        font-size: 0.85rem;
+        border-radius: 4px;
+      }
+
+      .post,
+      .service-card .card {
+        background: #fff;
+        border-radius: 6px;
+        overflow: hidden;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+        position: relative;
+      }
+
+      .post-desc,
+      .service-desc {
+        padding: 18px;
+      }
+
+      .post-title h5,
+      .service-title {
+        margin: 0 0 8px 0;
+        font-size: 1.05rem;
+      }
+
+      .footer {
+        background: #121217;
+        color: #cfcfcf;
+        padding-top: 36px;
+      }
+      .footer a {
+        color: #cfcfcf;
+        text-decoration: none;
+      }
+
+      .contact-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 999;
+        background: var(--brand-orange);
+        color: #fff;
+        padding: 12px 18px;
+        border-radius: 999px;
+        box-shadow: 0 10px 24px rgba(255, 122, 45, 0.18);
+        text-decoration: none;
+      }
+
+      /* ==================== HERO ==================== */
+      .hero-home {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 20px;
+        text-align: center;
+        background: url("images/hero.jpg") center/cover no-repeat;
+        color: #fff;
+      }
+
+      .hero-home h1 {
+        font-size: clamp(1.8rem, 4vw, 3rem);
+        font-weight: 700;
+        line-height: 1.3;
+      }
+
+      .hero-home p {
+        font-size: clamp(0.95rem, 2vw, 1.25rem);
+        margin-top: 1rem;
+      }
+
+      .hero-home .btn {
+        margin: 6px;
+      }
+
+      /* ==================== RESPONSIVE FIXES ==================== */
+
+      /* Navbar + Topbar */
+      @media (max-width: 991px) {
+        .top-bar .col-md-2 {
+          display: none;
+        }
+        .top-bar .col-md-5 {
+          text-align: center !important;
+        }
+        .navbar-brand img {
+          max-width: 140px;
+        }
+      }
+
+      /* Services & Blogs */
+      @media (max-width: 991px) {
+        .service-card .card img {
+          height: auto;
+        }
+        .service-bottom {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 6px;
+        }
+        .service-card {
+          margin-bottom: 30px;
+        }
+      }
+
+      /* Hero responsiveness */
+      @media (max-width: 768px) {
+        .hero-home {
+          min-height: 90vh;
+          padding-top: 100px;
+          background-position: top center;
+        }
+        .hero-home h1 {
+          font-size: 2rem;
+        }
+        .hero-home p {
+          font-size: 1rem;
+        }
+      }
+
+      /* Phones */
+      @media (max-width: 576px) {
+        .hero-home {
+          padding: 70px 16px;
+        }
+        .hero-home h1 {
+          font-size: 1.7rem;
+        }
+        .hero-home p {
+          font-size: 0.95rem;
+        }
+        .contact-btn {
+          right: 10px;
+          bottom: 10px;
+          padding: 10px 16px;
+          font-size: 0.9rem;
+        }
+        .footer {
+          text-align: center;
+        }
+        .footer ul {
+          padding-left: 0;
+          list-style: none;
+        }
+      }
+
+      /* Tablets */
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .hero-home {
+          min-height: 85vh;
+        }
+        .service-card .card img {
+          height: 200px;
+        }
+      }
+
+      /* Footer general fix */
+      @media (max-width: 992px) {
+        .footer .row > div {
+          text-align: center;
+        }
+        .footer img {
+          margin: 0 auto;
+        }
+      }
+
+      /* HERO SLIDER */
+      .hero-slider {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .hero-slider .slider {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+
+      .hero-slider .slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+        transition: opacity 1.5s ease-in-out;
+      }
+
+      .hero-slider .slide.active {
+        opacity: 1;
+      }
+
+      .hero-content {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        padding: 0 20px;
+        background: rgba(0, 0, 0, 0.45);
+      }
+
+      .hero-content h1 {
+        font-size: clamp(1.8rem, 4vw, 3rem);
+        font-weight: 700;
+        line-height: 1.3;
+      }
+
+      .hero-content p {
+        font-size: clamp(0.95rem, 2vw, 1.25rem);
+        margin-top: 1rem;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 768px) {
+        .hero-slider {
+          height: 90vh;
+        }
+        .hero-content h1 {
+          font-size: 1.9rem;
+        }
+        .hero-content p {
+          font-size: 1rem;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .hero-slider {
+          height: 85vh;
+        }
+        .hero-content h1 {
+          font-size: 1.6rem;
+        }
+        .hero-content p {
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <!-- TOP BAR -->
+      <div class="top-bar">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-5 col-sm-12">
+              <div class="topbar-link">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item">
+                    <a href="mailto:info@peeyashwebs.com"
+                      ><i class="far fa-envelope-open"></i>
+                      info@peeyashwebs.com</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="tel:+2348120001111"
+                      ><i class="fas fa-mobile-alt"></i> +234 812 000 1111</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block text-center">
+              <!-- logo center on larger screens -->
+              <a class="navbar-brand" href="index.html">
+                <!-- replace with your logo file -->
+                <img src="images/logo.png" style="height: 100%" />
+              </a>
+            </div>
+            <div class="col-md-5 col-sm-12 text-end">
+              <div class="social-icons">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- HEADER / NAV -->
+      <header id="site-header" class="header">
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-white border-bottom"
+        >
+          <div class="container">
+            <a class="navbar-brand d-lg-none" href="index.html">
+              <img
+                src="assets/images/logo-placeholder.png"
+                alt="Peeyashwebs"
+                style="height: 44px"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <!-- Services dropdown (collapsing arrow works on mobile) -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="servicesDrop"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="servicesDrop">
+                    <li>
+                      <a class="dropdown-item" href="services.html#web">
+                        Outdoor Units</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="services.html#branding"
+                        >Compressors</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="services.html#seo"
+                        >Copper Pipes & Fittings</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="services.html#seo"
+                        >Refrigerants</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+              <div class="d-none d-lg-block ms-lg-3">
+                <a class="btn btn-outline-primary" href="contact.html"
+                  >Get a Quote</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- HERO SECTION WITH SLIDING IMAGES -->
+      <section class="hero-slider">
+        <div class="slider">
+          <div
+            class="slide active"
+            style="background-image: url('images/hero 1.jpg')"
+          >
+            <div class="hero-content">
+              <h1>Quality HVAC Materials for Every Installation</h1>
+              <p>
+                Supplying premium air conditioning parts, copper pipes,
+                compressors, fittings, and ventilation equipment built for
+                performance and durability.
+              </p>
+              <div class="mt-4">
+                <a href="products.html" class="btn btn-light btn-lg me-2"
+                  >Shop Now</a
+                >
+                <a href="contact.html" class="btn btn-outline-light btn-lg"
+                  >Get a Quote</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="slide" style="background-image: url('images/hero 2.jpg')">
+            <div class="hero-content">
+              <h1>Your Reliable Source for HVAC Supplies</h1>
+              <p>
+                We provide trusted brands and high-grade materials for cooling,
+                heating, and ventilation systems — available at the best market
+                prices.
+              </p>
+              <div class="mt-4">
+                <a href="about.html" class="btn btn-light btn-lg me-2"
+                  >About Us</a
+                >
+                <a href="contact.html" class="btn btn-outline-light btn-lg"
+                  >Reach Out</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="slide" style="background-image: url('images/hero 3.jpg')">
+            <div class="hero-content">
+              <h1>Everything You Need for HVAC Projects</h1>
+              <p>
+                From installation to maintenance — find all HVAC materials,
+                tools, and accessories you need in one trusted place.
+              </p>
+              <div class="mt-4">
+                <a href="products.html" class="btn btn-light btn-lg me-2"
+                  >Browse Products</a
+                >
+                <a href="contact.html" class="btn btn-outline-light btn-lg"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCTS (3-column grid, 6 items) -->
+      <section class="py-5">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3 class="mb-0">Our Products</h3>
+            <a href="products.html" class="text-muted">See all products →</a>
+          </div>
+          <div class="row g-4">
+            <!-- Product 1 -->
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="service-card">
+                <div class="card">
+                  <div class="position-relative">
+                    <img
+                      class="card-img-top card-service"
+                      src="images/ac compressor.jpg"
+                      alt="AC Compressors"
+                    />
+                    <div class="service-date">Compressors</div>
+                  </div>
+                  <div class="card-body service-desc">
+                    <h5 class="service-title">AC Compressors</h5>
+                    <p class="text-muted small">
+                      High-quality reciprocating and rotary compressors for
+                      residential and commercial units.
+                    </p>
+                  </div>
+                  <div class="service-bottom">
+                    <small class="text-muted">Peeyash CoolTech</small>
+                    <a class="service-btn" href="products.html#compressor"
+                      >Request Quote
+                      <i class="fas fa-long-arrow-alt-right ms-2"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="80">
+              <div class="service-card">
+                <div class="card">
+                  <div class="position-relative">
+                    <img
+                      class="card-img-top card-service"
+                      src="images/Copper Pipes & Fittings.jpg"
+                      alt="Copper Pipes & Fittings"
+                    />
+                    <div class="service-date">Pipes & Fittings</div>
+                  </div>
+                  <div class="card-body service-desc">
+                    <h5 class="service-title">Copper Pipes & Fittings</h5>
+                    <p class="text-muted small">
+                      Durable copper tubing and fittings for safe, leak-free
+                      installations.
+                    </p>
+                  </div>
+                  <div class="service-bottom">
+                    <small class="text-muted">Peeyash CoolTech</small>
+                    <a class="service-btn" href="products.html#pipes"
+                      >Request Quote
+                      <i class="fas fa-long-arrow-alt-right ms-2"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="160">
+              <div class="service-card">
+                <div class="card">
+                  <div class="position-relative">
+                    <img
+                      class="card-img-top card-service"
+                      src="images/Refrigerant Gas.jpg"
+                      alt="Refrigerant Gas"
+                    />
+                    <div class="service-date">Refrigerants</div>
+                  </div>
+                  <div class="card-body service-desc">
+                    <h5 class="service-title">Refrigerant Gas</h5>
+                    <p class="text-muted small">
+                      R410A, R32 and other refrigerants available. Certified
+                      supply for professional use.
+                    </p>
+                  </div>
+                  <div class="service-bottom">
+                    <small class="text-muted">Peeyash CoolTech</small>
+                    <a class="service-btn" href="products.html#refrigerant"
+                      >Request Quote
+                      <i class="fas fa-long-arrow-alt-right ms-2"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-md-6 mt-4" data-aos="fade-up" data-aos-delay="80">
+              <div class="service-card">
+                <div class="card">
+                  <div class="position-relative">
+                    <img
+                      class="card-img-top card-service"
+                      src="images/Outdoor Units.jpg"
+                      alt="Outdoor Units"
+                    />
+                    <div class="service-date">Outdoor Units</div>
+                  </div>
+                  <div class="card-body service-desc">
+                    <h5 class="service-title">Outdoor Units</h5>
+                    <p class="text-muted small">
+                      Wide range of outdoor condensing units from trusted brands
+                      for different capacities.
+                    </p>
+                  </div>
+                  <div class="service-bottom">
+                    <small class="text-muted">Peeyash CoolTech</small>
+                    <a class="service-btn" href="products.html#outdoor"
+                      >Request Quote
+                      <i class="fas fa-long-arrow-alt-right ms-2"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-md-6 mt-4" data-aos="fade-up" data-aos-delay="160">
+              <div class="service-card">
+                <div class="card">
+                  <div class="position-relative">
+                    <img
+                      class="card-img-top card-service"
+                      src="images/Brackets & Accessories.jpg"
+                      alt="Wall Brackets & Accessories"
+                    />
+                    <div class="service-date">Brackets & Accessories</div>
+                  </div>
+                  <div class="card-body service-desc">
+                    <h5 class="service-title">Wall Brackets & Accessories</h5>
+                    <p class="text-muted small">
+                      Sturdy mounting brackets, vibration isolators and
+                      installation accessories.
+                    </p>
+                  </div>
+                  <div class="service-bottom">
+                    <small class="text-muted">Peeyash CoolTech</small>
+                    <a class="service-btn" href="products.html#brackets"
+                      >Request Quote
+                      <i class="fas fa-long-arrow-alt-right ms-2"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-6 mt-4" data-aos="fade-up" data-aos-delay="240">
+              <div class="service-card">
+                <div class="card">
+                  <div class="position-relative">
+                    <img
+                      class="card-img-top card-service"
+                      src="images/Insulation Materials.jpg"
+                      alt="Insulation Materials"
+                    />
+                    <div class="service-date">Insulation</div>
+                  </div>
+                  <div class="card-body service-desc">
+                    <h5 class="service-title">Insulation Materials</h5>
+                    <p class="text-muted small">
+                      Thermal insulation and protective sleeves to prevent
+                      energy loss and condensation.
+                    </p>
+                  </div>
+                  <div class="service-bottom">
+                    <small class="text-muted">Peeyash CoolTech</small>
+                    <a class="service-btn" href="products.html#insulation"
+                      >Request Quote
+                      <i class="fas fa-long-arrow-alt-right ms-2"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.row -->
+        </div>
+      </section>
+      <!-- CLIENT REVIEWS -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h3 class="mb-3">Trusted by Installers</h3>
+            <p class="text-muted">
+              Real feedback from technicians and contractors who buy from
+              <span class="text-accent">Peeyash CoolTech Supplies</span>.
+            </p>
+          </div>
+          <div class="row g-4">
+            <!-- Testimonial 1 -->
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="card border-0 shadow-sm p-4 h-100">
+                <div class="d-flex align-items-center mb-3">
+                  <div>
+                    <h6 class="mb-0">Mrs. Ada U., Lagos</h6>
+                    <small class="text-muted">HVAC Installer</small>
+                  </div>
+                </div>
+                <p class="text-muted mb-0">
+                  Peeyash CoolTech supplied compressors and copper pipes for our
+                  recent project. Delivery was fast and the parts were top
+                  quality.
+                </p>
+              </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="80">
+              <div class="card border-0 shadow-sm p-4 h-100">
+                <div class="d-flex align-items-center mb-3">
+                  <div>
+                    <h6 class="mb-0">Mr. Chuka M., Lekki</h6>
+                    <small class="text-muted">Contractor</small>
+                  </div>
+                </div>
+                <p class="text-muted mb-0">
+                  We source bulk refrigerants and outdoor units from Peeyash —
+                  consistent stock and great prices.
+                </p>
+              </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="160">
+              <div class="card border-0 shadow-sm p-4 h-100">
+                <div class="d-flex align-items-center mb-3">
+                  <div>
+                    <h6 class="mb-0">Faith O., Ikeja</h6>
+                    <small class="text-muted">Procurement Lead</small>
+                  </div>
+                </div>
+                <p class="text-muted mb-0">
+                  Reliable supplier — their insulation and bracket kits saved us
+                  time on several installs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- LATEST BLOGS -->
+      <section class="py-5">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3 class="mb-0">Latest from Our Blog</h3>
+            <a href="blog.html" class="text-muted">View More →</a>
+          </div>
+          <div class="row g-4">
+            <!-- Blog 1 -->
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="card h-100 shadow-sm border-0">
+                <img
+                  src="images/How to fix.jpg"
+                  class="card-img-top"
+                  alt="Blog 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    How to Choose the Right Compressor for Your Unit
+                  </h5>
+                  <p class="card-text text-muted small">
+                    A quick guide to choosing compressors by capacity and type.
+                  </p>
+                  <a href="blog.html" class="service-btn">Read More →</a>
+                </div>
+              </div>
+            </div>
+            <!-- Blog 2 -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="80">
+              <div class="card h-100 shadow-sm border-0">
+                <img
+                  src="images/Best Practices for Refrigerant Handling & Safety.jpg"
+                  class="card-img-top"
+                  alt="Blog 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Best Practices for Refrigerant Handling & Safety
+                  </h5>
+                  <p class="card-text text-muted small">
+                    Safety tips and legal considerations for refrigerant storage
+                    and use.
+                  </p>
+                  <a href="blog.html" class="service-btn">Read More →</a>
+                </div>
+              </div>
+            </div>
+            <!-- Blog 3 -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="160">
+              <div class="card h-100 shadow-sm border-0">
+                <img
+                  src="images/Top HVAC Suppliers in Nigeria.jpg"
+                  class="card-img-top"
+                  alt="Blog 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Top HVAC Suppliers in Nigeria</h5>
+                  <p class="card-text text-muted small">
+                    A short list to help installers find reliable suppliers
+                    across Lagos and beyond.
+                  </p>
+                  <a href="blog.html" class="service-btn">Read More →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SMALL CTA -->
+      <section class="py-5 text-center bg-light">
+        <div class="container">
+          <h4 data-aos="fade-up">Ready to place an order?</h4>
+          <p class="text-muted" data-aos="fade-up" data-aos-delay="80">
+            Request a quick quote — bulk discounts and nationwide delivery
+            available.
+          </p>
+          <a
+            href="contact.html"
+            class="btn btn-primary btn-lg"
+            data-aos="fade-up"
+            data-aos-delay="160"
+            >Request Quote</a
+          >
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="primary-footer py-5">
+          <div class="container">
+            <div class="row gy-4">
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-logo mb-3">
+                  <img
+                    src="images/logo.png"
+                    alt="Peeyash CoolTech logo"
+                    style="height: 56px"
+                  />
+                </div>
+                <p>
+                  Supplying quality air conditioning materials to technicians
+                  and contractors across Nigeria.
+                </p>
+                <div class="footer-logo mt-3">
+                  <img src="images/logo.png" alt="" style="height: 150px" />
+                </div>
+                <ul class="list-unstyled working-hours mt-3">
+                  <h5>Working <span class="text-accent">hours</span></h5>
+                  <li><span>Mon - Sat</span> 8:00 to 6:00</li>
+                  <li><span>Sunday</span> Closed</li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <h5>Quick <span class="text-accent">Links</span></h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="about.html"
+                      ><i class="fas fa-angle-right me-2"></i>About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a href="products.html"
+                      ><i class="fas fa-angle-right me-2"></i>Products</a
+                    >
+                  </li>
+                  <li>
+                    <a href="portfolio.html"
+                      ><i class="fas fa-angle-right me-2"></i>Portfolios</a
+                    >
+                  </li>
+                  <li>
+                    <a href="blog.html"
+                      ><i class="fas fa-angle-right me-2"></i>Blog</a
+                    >
+                  </li>
+                  <li>
+                    <a href="contact.html"
+                      ><i class="fas fa-angle-right me-2"></i>Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <h5>Our <span class="text-accent">Solutions</span></h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="products.html#compressor"
+                      ><i class="fas fa-angle-right me-2"></i>Compressors</a
+                    >
+                  </li>
+                  <li>
+                    <a href="products.html#pipes"
+                      ><i class="fas fa-angle-right me-2"></i>Copper Pipes</a
+                    >
+                  </li>
+                  <li>
+                    <a href="products.html#refrigerant"
+                      ><i class="fas fa-angle-right me-2"></i>Refrigerants</a
+                    >
+                  </li>
+                  <li>
+                    <a href="products.html#outdoor"
+                      ><i class="fas fa-angle-right me-2"></i>Outdoor Units</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <h5>Contact <span class="text-accent">Us</span></h5>
+                <ul class="list-unstyled small">
+                  <li><strong>Address:</strong><br />Lagos, Nigeria</li>
+                  <li class="mt-2">
+                    <strong>Phone:</strong><br /><a href="tel:+2348120001111"
+                      >+234 812 000 1111</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <strong>Email:</strong><br /><a
+                      href="mailto:sales@peeyashcooltech.com"
+                      >sales@peeyashcooltech.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="secondary-footer py-3 border-top"
+          style="border-color: rgba(255, 255, 255, 0.03) !important"
+        >
+          <div class="container text-center small">
+            <div>
+              © <span id="siteYear"></span> Peeyash CoolTech Supplies • All
+              Rights Reserved
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Request Quote floating button -->
+      <a class="contact-btn" href="contact.html">Request Quote</a>
+    </div>
+    <!-- page-wrapper end -->
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      if (window.AOS) AOS.init({ duration: 650, once: true });
+      document.getElementById("siteYear").textContent =
+        new Date().getFullYear();
+    </script>
+
+    <script>
+      const slides = document.querySelectorAll(".hero-slider .slide");
+      let current = 0;
+
+      function nextSlide() {
+        slides[current].classList.remove("active");
+        current = (current + 1) % slides.length;
+        slides[current].classList.add("active");
+      }
+
+      setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    </script>
+  </body>
+</html>
