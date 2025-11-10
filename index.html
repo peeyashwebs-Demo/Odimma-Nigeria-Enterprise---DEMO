@@ -396,6 +396,49 @@
         margin: 30px auto;
         border-radius: 10px;
       }
+
+      .product-card img {
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .product-card img {
+    max-height: 200px;
+  }
+}
+.products-section {
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.products-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+.section-divider {
+  height: 4px;
+  width: 60px;
+  background: linear-gradient(90deg, #00b894, #0984e3);
+  border-radius: 4px;
+  margin: 0 auto 30px auto;
+}
+
     </style>
   </head>
 
@@ -605,6 +648,7 @@
         </div>
       </section>
       <div class="section-divider"></div>
+
 
       <!-- PRODUCTS (3-column grid, 6 items) -->
       <section class="py-5">
@@ -1077,4 +1121,5 @@
     </script>
   </body>
 </html>
+
 
